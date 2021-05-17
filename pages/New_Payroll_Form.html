@@ -109,6 +109,22 @@
             resize: vertical;
         }
 
+        .profile-radio-content{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .profile-radio-content > label{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .profile {
+            width: 40px;
+            border-radius: 50%;
+            margin-left: 12px;
+        }
 
         </style>
     </head>
@@ -129,6 +145,35 @@
         <div class="row-content">
             <label class="label text" for="name">Name</label>
             <input class="input" type="text" id="name" name="name" placeholder="your name.." required>
+        </div>
+
+        <div class="row-content">
+            <label class="label text" for="profile">Profile image</label>
+            <div class="profile-radio-content">
+                <label>
+                    <input type="radio" id="profile1" name="profile"
+                           value="C:\Users\LENOVO\Desktop\Day45\Images\pic1.jfif" required>
+                <img class="profile" id='image1' src="C:\Users\LENOVO\Desktop\Day45\Images\pic1.jfif">        
+                </label>
+
+                <label>
+                    <input type="radio" id="profile2" name="profile"
+                           value="C:\Users\LENOVO\Desktop\Day45\Images\pic2.jfif" required>
+                <img class="profile" id='image2' src="C:\Users\LENOVO\Desktop\Day45\Images\pic2.jfif">        
+                </label>
+
+                <label>
+                    <input type="radio" id="profile3" name="profile"
+                           value="C:\Users\LENOVO\Desktop\Day45\Images\pic3.jfif" required>
+                <img class="profile" id='image3' src="C:\Users\LENOVO\Desktop\Day45\Images\pic3.jfif">        
+                </label>
+
+                <label>
+                    <input type="radio" id="profile4" name="profile"
+                           value="C:\Users\LENOVO\Desktop\Day45\Images\pic4.jfif" required>
+                <img class="profile" id='image4' src="C:\Users\LENOVO\Desktop\Day45\Images\pic4.jfif">        
+                </label>
+            </div>
         </div>
     </body>
 </html>
